@@ -1,7 +1,7 @@
-# Panduan git dan github
+# Panduan Git dan Github
 ### 👋 Selamat Datang!
-Halo! Terima kasih sudah mengunjungi repositori github saya.
-repositori ini saya buat sebagai dokumentasi bagi kalian yang baru mulai belajar git dan github.
+Halo! Terima kasih sudah mengunjungi repositori Github saya.
+repositori ini saya buat sebagai dokumentasi bagi kalian yang baru mulai belajar Git dan Github.
 
 Saya tahu betul bahwa saat pertama kali belajar git dan github, pasti akan terasa membingungkan di awal bagi orang yang jarang sekali mendengar kata git dan github, alasannya bisa bermacam-macam, mulai dari banyaknya perintah yang digunakan, istilah teknis yang sulit dimengerti, dan beberapa konsep yang harus dipahami. Oleh karena itu, tujuan utama dari dokumentasi ini adalah untuk membantu kalian mempelajari git dan github dengan cara yang sederhana, mudah dimengerti, dan langsung bisa dipraktikan.
 
