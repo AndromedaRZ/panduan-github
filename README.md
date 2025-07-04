@@ -32,4 +32,4 @@ Dengan github, kamu bisa:
 - gitHub juga menampilkan histori commit, siapa yang mengubah apa, dan kapan. Cocok untuk proyek tim atau open source.
 - Kalian juga bisa membuat repositori publik yang bisa dilihat oleh siapa saja, atau menjadikannya privat jika proyek hanya untuk diri sendiri atau tim.
 
-Dengan kata lain, GitHub adalah alat penting bagi para pengembang untuk berkolaborasi, mengelola kode, dan berbagi proyek mereka dengan dunia. Untuk lebih jelas lagi, mari kita langsung saja menuju Bab 1 dengan mengklik link berikut. 
+Dengan kata lain, GitHub adalah alat penting bagi para pengembang untuk berkolaborasi, mengelola kode, dan berbagi proyek mereka dengan dunia. Untuk lebih jelas lagi, mari kita langsung saja menuju Bab 1 dengan mengklik link berikut. https://github.com/AndromedaRZ/panduan-github/blob/main/Bab1.md
