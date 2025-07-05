@@ -41,7 +41,7 @@ git version 2.50.0.windows.1
 Kalau muncul pesan error atau tidak dikenali, ulangi proses instalasi dan pastikan terminal mengenali perintah 'git'.
 
 ## ⚙️ 3. Konfigurasi Git
-Sekarang, kita akan mengatur nama dan email kita pada git. Sebelum menggunakan git, kalian perlu mengatur identitas kalian terlebih dahulu. Ini penting karena setiap perubahan yang kalian atau orang lain lakukan (commit). Git akan melacak dan mencatat identitas siapa yang melakukan perubahan tersebut.
+Sekarang, kita akan mengatur nama dan email kita pada git. Sebelum menggunakan git, kalian perlu mengatur identitas kalian terlebih dahulu. Ini penting karena setiap perubahan yang kalian atau orang lain lakukan (commit), git akan melacak dan mencatat identitas siapa yang melakukan perubahan tersebut.
 
 untuk menentukan identitas kalian dalam git, jalankan perintah berikut pada terminal komputer kalian:
 ```
@@ -76,4 +76,5 @@ Kamu sudah berhasil:
 - Memastikan Git aktif di terminal  
 - Mengatur identitas Git kamu
 
-😎 Bagaimana belajarnya? apakah kalian sudah ada gambaran mengenai git tadi? untuk materi berikutnya, kalian akan belajar memahami perintah-perintah dasar di dalam git. Tunggu apa lagi?, klik link di bawah ini untuk menuju ke materi berikutnya 👇.
+😎 Bagaimana belajarnya? apakah kalian sudah ada gambaran mengenai git tadi? untuk materi berikutnya, kalian akan belajar memahami perintah-perintah dasar di dalam git. Tunggu apa lagi?, klik link di bawah ini untuk menuju ke materi berikutnya 👇.  
+https://github.com/AndromedaRZ/panduan-github/blob/main/Bab2.md
