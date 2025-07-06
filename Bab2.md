@@ -16,4 +16,5 @@ Setelah menjalankan perintah 'git init'. Git akan membuat folder tersembunyi ber
 Sebelum kita melakukan perubahan pada proyek milik kita, kita harus memahami alur kerja git terlebih dahulu. Untuk lebih jelasnya, area kerja pada repositori git terbagi menjadi 3:
 ### 🔸 Working Directory 
 Adalah lokasi folder atau direktori tempat kalian membuat repositori, ini adalah folder proyek kalian yang berisi file-file yang bisa kalian lihat dan edit. Jika kalian melakukan tindakan seperti membuat sebuah file baru, mengedit file, atau menghapus file proyek kalian, berarti kalian masih berada di dalam area Working Directory.
-
+### 🔸 Staging Area
+Adalah area sementara di saat kalian sedang melakukan perubahan di dalam folder atau direktori proyek kalian, tetapi kita belum memutuskan untuk commit atau mengonfirmasi perubahan tersebut. Jika kalan sering belanja online melalui aplikasi belanja, maka staging area ini seperti saat kalian memasukkan barang yang ingin kalian beli ke dalam keranjang dan belum memutuskan untuk melakukan checkout barang tersebut.
