@@ -12,5 +12,8 @@ git init
 Setelah menjalankan perintah 'git init'. Git akan membuat folder tersembunyi bernama '.git', folder tersebut akan menyimpan dan mencatat seluruh perubahan yang kalian lakukan pada proyek kalian.  
 📌 Catatan penting: Folder ini tidak boleh dihapus, karena berisi semua data penting Git.
 
-
+## 🧠 2.2 Memahami Alur Kerja Git
+Sebelum kita melakukan perubahan pada proyek milik kita, kita harus memahami alur kerja git terlebih dahulu. Untuk lebih jelasnya, area kerja pada repositori git terbagi menjadi 3:
+### 🔸 Working Directory 
+Adalah lokasi folder atau direktori tempat kalian membuat repositori, ini adalah folder proyek kalian yang berisi file-file yang bisa kalian lihat dan edit. Jika kalian melakukan tindakan seperti membuat sebuah file baru, mengedit file, atau menghapus file proyek kalian, berarti kalian masih berada di dalam area Working Directory.
 
