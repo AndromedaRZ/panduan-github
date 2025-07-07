@@ -21,3 +21,6 @@ Adalah area sementara di saat kalian sedang melakukan perubahan di dalam folder 
 
 📌 File yang sudah berada di staging area tidak akan berubah jika kalian mengeditnya lagi sebelum commit, kalian perlu menggunakan perintah 'git add' lagi jika ingin mengedit ulang filenya.
 ### 🔸 Repository (Commit History)
+Dalam Git, repositori adalah tempat di mana seluruh riwayat proyek kamu disimpan secara permanen. Setiap perubahan yang kamu simpan dengan perintah 'git commit' akan masuk ke dalam repository, dan Git akan menyimpannya sebagai snapshot, atau salinan kondisi proyek pada saat commit tersebut dilakukan.
+### 🧾 Apa Itu Commit?
+Commit adalah langkah menyimpan perubahan ke repository. Commit bersifat permanen, artinya Git akan mencatatnya dan kamu bisa kembali ke commit itu kapan saja. Setiap commit berisi commit hash (code commitnya), nama dan email pembuatnya, waktu dan tanggal commitnya, daftar perubahan, serta pesan commit jika kalian menambahkan pesan singkat saat melakukan commitnya.
