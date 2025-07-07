@@ -9,7 +9,7 @@ Sebelum membuat repositori lokal di dalam komputer kalian, pertama-tama kalian h
 ```
 git init
 ```
-Setelah menjalankan perintah 'git init'. Git akan membuat folder tersembunyi bernama '.git', folder tersebut akan menyimpan dan mencatat seluruh perubahan yang kalian lakukan pada proyek kalian.  
+Setelah menjalankan perintah `git init`. Git akan membuat folder tersembunyi bernama '.git', folder tersebut akan menyimpan dan mencatat seluruh perubahan yang kalian lakukan pada proyek kalian.  
 📌 Catatan penting: Folder ini tidak boleh dihapus, karena berisi semua data penting Git.
 
 ## 🧠 2.2 Memahami Alur Kerja Git
@@ -17,10 +17,26 @@ Sebelum kita melakukan perubahan pada proyek milik kita, kita harus memahami alu
 ### 🔸 Working Directory 
 Adalah lokasi folder atau direktori tempat kalian membuat repositori, ini adalah folder proyek kalian yang berisi file-file yang bisa kalian lihat dan edit. Jika kalian melakukan tindakan seperti membuat sebuah file baru, mengedit file, atau menghapus file proyek kalian, berarti kalian masih berada di dalam area Working Directory, dan status file yang kalian edit akan menjadi modified.
 ### 🔸 Staging Area
-Adalah area sementara di saat kalian sedang melakukan perubahan di dalam folder atau direktori proyek kalian, tetapi kita belum memutuskan untuk commit atau mengonfirmasi perubahan tersebut. Jika kalan sering belanja online melalui aplikasi belanja, maka staging area ini seperti saat kalian memasukkan barang yang ingin kalian beli ke dalam keranjang dan belum memutuskan untuk melakukan checkout barang tersebut. Jika kalian sudah selesai mengedit file proyek kalian, kalian bisa menggunakan perintah 'git add', maka file yang sudah kalian edit tadi akan masuk ke area yang namanya staging area.
+Adalah area sementara di saat kalian sedang melakukan perubahan di dalam folder atau direktori proyek kalian, tetapi kita belum memutuskan untuk commit atau mengonfirmasi perubahan tersebut. Jika kalan sering belanja online melalui aplikasi belanja, maka staging area ini seperti saat kalian memasukkan barang yang ingin kalian beli ke dalam keranjang dan belum memutuskan untuk melakukan checkout barang tersebut. Jika kalian sudah selesai mengedit file proyek kalian, kalian bisa menggunakan perintah `git add`, maka file yang sudah kalian edit tadi akan masuk ke area yang namanya staging area.
 
-📌 File yang sudah berada di staging area tidak akan berubah jika kalian mengeditnya lagi sebelum commit, kalian perlu menggunakan perintah 'git add' lagi jika ingin mengedit ulang filenya.
+📌 File yang sudah berada di staging area tidak akan berubah jika kalian mengeditnya lagi sebelum commit, kalian perlu menggunakan perintah `git add` lagi jika ingin mengedit ulang filenya.
 ### 🔸 Repository (Commit History)
-Dalam Git, repositori adalah tempat di mana seluruh riwayat proyek kamu disimpan secara permanen. Setiap perubahan yang kamu simpan dengan perintah 'git commit' akan masuk ke dalam repository, dan Git akan menyimpannya sebagai snapshot, atau salinan kondisi proyek pada saat commit tersebut dilakukan.
+Dalam Git, repositori adalah tempat di mana seluruh riwayat proyek kamu disimpan secara permanen. Setiap perubahan yang kamu simpan dengan perintah `git commit` akan masuk ke dalam repository, dan Git akan menyimpannya sebagai snapshot, atau salinan kondisi proyek pada saat commit tersebut dilakukan.
 ### 🧾 Apa Itu Commit?
 Commit adalah langkah menyimpan perubahan ke repository. Commit bersifat permanen, artinya Git akan mencatatnya dan kamu bisa kembali ke commit itu kapan saja. Setiap commit berisi commit hash (code commitnya), nama dan email pembuatnya, waktu dan tanggal commitnya, daftar perubahan, serta pesan commit jika kalian menambahkan pesan singkat saat melakukan commitnya.
+### 📸 Apa Itu Snapshot?
+Snapshot dalam Git adalah salinan lengkap kondisi proyek kalian pada saat tertentu, biasanya setiap kali kalian melakukan `git commit`. Git menyimpan proyek kalian dalam bentuk snapshot, bukan hanya perubahan baris demi baris seperti sistem kontrol versi tradisional. Ini adalah inti dari cara kerja git. Snapshot adalah kondisi seluruh file proyek saat commit dilakukan.
+
+## ✏️ 2.3 Menambahkan dan Menyimpan Perubahan
+### 🔹 1. Buat File Baru
+Pertama-tama, cobalah membuat sebuah file baru pada folder atau direktori proyek kalian, bukalah folder atau direktori proyek kalian, lalu jalankan terminal dan ketikkan perintah berikut:
+```
+echo "Belajar git"> catatan.txt
+```
+Perintah di atas berfungsi untuk membuat sebuah file txt baru bernama 'catatan.txt', lalu memasukkan kalimat "Belajar git" di dalam isi file tersebut.
+### 🔹 2. Cek Status File
+Lihatlah status file kalian dengan perintah berikut:
+```
+git status
+```
+Git akan menampilkan file yang sudah kalian edit tadi, perlu diketahui dalam tahap ini, kalian masih berada di area working directory
