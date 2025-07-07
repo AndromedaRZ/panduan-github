@@ -27,6 +27,9 @@ Commit adalah langkah menyimpan perubahan ke repository. Commit bersifat permane
 ### 📸 Apa Itu Snapshot?
 Snapshot dalam Git adalah salinan lengkap kondisi proyek kalian pada saat tertentu, biasanya setiap kali kalian melakukan `git commit`. Git menyimpan proyek kalian dalam bentuk snapshot, bukan hanya perubahan baris demi baris seperti sistem kontrol versi tradisional. Ini adalah inti dari cara kerja git. Snapshot adalah kondisi seluruh file proyek saat commit dilakukan.
 
+Agar kalian bisa memahami lebih jelas mengenai area dalam git, kalian dapat melihat gambar berikut:
+NANTI KASIH GAMBAR DIAGRAMNYA COY
+
 ## ✏️ 2.3 Menambahkan dan Menyimpan Perubahan
 ### 🔹 1. Buat File Baru
 Pertama-tama, cobalah membuat sebuah file baru pada folder atau direktori proyek kalian, bukalah folder atau direktori proyek kalian, lalu jalankan terminal dan ketikkan perintah berikut:
@@ -39,4 +42,21 @@ Lihatlah status file kalian dengan perintah berikut:
 ```
 git status
 ```
-Git akan menampilkan file yang sudah kalian edit tadi, perlu diketahui dalam tahap ini, kalian masih berada di area working directory
+Git akan menampilkan file yang sudah kalian edit tadi, perlu diketahui dalam tahap ini, kalian masih berada di area working directory.
+### 🔹 3. Tambahkan File ke Staging Area
+Sebelum menyimpan perubahan, kalian perlu memilih file mana yang ingin dicatat perubahannya, gunakan perintah berikut untuk menyimpan perubahan dari file secara spesifik:
+```
+git add catatan.txt
+```
+Atau jika kalian melakukan perubahan pada banyak file, menggunakan perintah spesifik satu persatu pasti akan memakan waktu yang cukup lama, maka gunakan perintah berikut untuk menyimpan perubahan dari semua file yang kalian edit.
+```
+git add .
+```
+Perintah di atas akan menambahkan semua file yang kalian ubah ke area yang namanya staging area. Jika kalian ingin memastikan bahwa file yang kalian ubah sudah tersimpan perubahannya atau sudah ditambahkan ke staging area, kalian dapat menggunakan perintah `git status`, maka akan muncul keterangan seperti berikut:
+
+### 🔹 4. Simpan Perubahan dengan Commit
+Gunakan perintah berikut untuk menyimpan perubahan file proyek kalian saat ini ke dalam riwayat git.
+```
+git commit -m "Menambahkan file catatan.txt"
+```
+File yang sudah di-commit akan tersimpan perubahannya pada log commit git.
