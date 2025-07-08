@@ -59,4 +59,15 @@ Gunakan perintah berikut untuk menyimpan perubahan file proyek kalian saat ini k
 ```
 git commit -m "Menambahkan file catatan.txt"
 ```
-File yang sudah di-commit akan tersimpan perubahannya pada log commit git.
+File yang sudah di-commit akan tersimpan perubahannya ke dalam area repository (commit history)
+
+## 🔍 Melihat Isi Repositori (Riwayat Commit)
+Setelah kalian melaukan beberapa kali commit atau perubahan, kalian bisa melihat daftar riwayat commit kalian menggunakan perintah pada terminal seperti berikut:
+```
+git log
+```
+Maka contoh riwayat commitnya akan muncul seperti berikut:
+```
+Jangan lupa masukin gambar git log nya
+```
+Dalam hasil git log di atas, diperlihatkan informasi dari log atau riwayat commit kalian. Seperti siapa yang melakukan perubahan atau commit tersebut, lalu kapan waktu dan tanggal commit tersebut dibuat, dan isi dari pesan commit yang kalian buat.
