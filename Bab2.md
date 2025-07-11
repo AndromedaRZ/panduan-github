@@ -71,3 +71,50 @@ Maka contoh riwayat commitnya akan muncul seperti berikut:
 Jangan lupa masukin gambar git log nya
 ```
 Dalam hasil git log di atas, diperlihatkan informasi dari log atau riwayat commit kalian. Seperti siapa yang melakukan perubahan atau commit tersebut, lalu kapan waktu dan tanggal commit tersebut dibuat, dan isi dari pesan commit yang kalian buat.
+
+## 2.4 🌿 Bekerja dengan Branch (Cabang)
+### 📌 Apa Itu Branch?
+Branch (Cabang) adalah salah satu fitur di Git yang berfungsi untuk membuat jalur pengembangan atau jalur proyek yang terpisah dari jalur utama (biasanya jalur utama disebut `main` atau `master`)  
+Branch memungkinkan kita untuk:
+1. Mencoba fitur baru tanpa merusak atau merubah kode utama
+2. Memperbaiki bug secara terpisah
+3. Mengembangkan beberapa ide atau fitur sekaligus  
+Setelah selesai, hasil pekerjaan di branch lain bisa digabungkan (merge) kembali ke branch utama (main/master)
+
+### 💡 Analogi Branch
+Bayangkan proyek kita seperti sebuah pohon besar yang batangnya memiliki beberapa cabang dahan
+- Batang utama = branch `main/master` tempat kode stabil berada
+- Cabang-cabang lain = branch baru untuk mengembangkan fitur tertentu secara terpisah  
+Jika nanti cabang yang lain sudah selesai dikerjakan, kita bisa menggabungkan fiturnya kembali ke cabang utama `main/master`
+
+### 🛠️ Membuat dan Berpindah ke Branch Baru
+#### 🔧 Membuat branch baru
+
+Pertama-tama kita perlu mengetahui aturan untuk memberi nama pada branch terlebih dahulu:
+1. Jangan gunakan spasi jika lebih dari 1 kata, gunakan `-` sebagai alternatif
+2. Gunakanlah nama yang pendek dan mudah dimengerti, contohnya:
+   - `fitur-login`
+   - `fitur-redirect`
+   - `bug-v1.2`  
+
+Berikut adalah perintah untuk membuat branch baru:
+```
+git branch <nama branch>
+```
+Jika kita ingin membuat branch baru bernama `fitur-login`, jalankan perintah:
+```
+git branch fitur-login
+```
+*Ini hanya membuat branch, tapi kita belum berpindah ke branch tersebut
+
+#### 🚀 Berpindah ke branch
+Cara berpindah branch, cukup ketikkan `git switch` beserta nama branch yang ingin kita tuju:
+```
+git swtich <nama branch>
+```
+Agar kita bisa menggunakan branch `fitur-login`, jalankan perintah:
+```
+git switch fitur-login
+```
+
+
