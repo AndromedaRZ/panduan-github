@@ -91,11 +91,12 @@ Jika nanti cabang yang lain sudah selesai dikerjakan, kita bisa menggabungkan fi
 #### 🔧 Membuat branch baru
 
 Pertama-tama kita perlu mengetahui aturan untuk memberi nama pada branch terlebih dahulu:
-1. Jangan gunakan spasi jika lebih dari 1 kata, gunakan `-` sebagai alternatif
-2. Gunakanlah nama yang pendek dan mudah dimengerti, contohnya:
+1. Jangan gunakan spasi jika lebih dari 1 kata, gunakan `-` sebagai alternatif.
+2. Hindari karakter aneh, seperti `#`, `@`, `!`, `%`.
+3. Gunakanlah nama yang pendek dan mudah dimengerti, contohnya:
    - `fitur-login`
    - `fitur-redirect`
-   - `bug-v1.2`  
+   - `bug-v1.2`
 
 Berikut adalah perintah untuk membuat branch baru:
 ```
@@ -107,14 +108,47 @@ git branch fitur-login
 ```
 *Ini hanya membuat branch, tapi kita belum berpindah ke branch tersebut
 
+#### 📃 Note
+Perlu diketahui, ketika kita membuat branch lain maka branch tersebut akan membuat jalur baru dari branch yang kita tempati.  
+Misalnya ketika kita berada di branch `master` lalu membuat branch baru bernama `fitur-login`, maka branch `fitur-login` akan membuat jalur baru yang berasal dari branch `master`.  
+Lalu ketika kita berada di branch `fitur-login` dan membuat branch baru bernama `bug-v1`, maka branch `bug-v1` akan membuat jalur baru yang berasal dari branch `fitur-login` dan bukan berasal dari branch `master`.  
+Jadi branch baru akan membuat jalur baru yang berasal dari branch posisi tempat branch kita berada.
+
 #### 🚀 Berpindah ke branch
 Cara berpindah branch, cukup ketikkan `git switch` beserta nama branch yang ingin kita tuju:
 ```
 git swtich <nama branch>
 ```
-Agar kita bisa menggunakan branch `fitur-login`, jalankan perintah:
+Agar kita bisa pindah dan menggunakan branch `fitur-login`, jalankan perintah:
 ```
 git switch fitur-login
 ```
+Setelah ini, semua perubahan dan commit kita akan masuk ke branch `fitur-login`, dan tidak akan mengganggu progress di branch utama (`main/master`)  
+Kamu juga bisa langsung membuat branch dan berpindah ke branch yang kamu buat sekaligus dengan perintah:
+`git switch -c fitur-login`
 
+### 🔄 Kembali ke Branch Utama
+Kalau mau kembali bekerja di branch utama `main`, jalankan:
+```
+git switch main
+```
+Atau jika nama branch utamanya adalah `master`, maka jalankan:
+```
+git switch master
+```
 
+### 🔍 Melihat Daftar Branch
+Untuk melihat semua branch yang ada, gunakan perintah:
+```
+git branch
+```
+Hasilnya. misalnya:  
+```
+<Nanti masukkin gambar 'git_branch.png'>
+```
+Pada gambar diatas, ada 3 cabang yang muncul yaitu `bug-v1`, `fitur-login`, dan `master`.  
+Pada branch `master` terdapat simbol `*` di depannya yang berarti kita sedang berada di branch tersebut, hal yang sama berlaku pada branch lainnya ketika kita pindah branch
+
+## 🌳 2.6 Menggabungkan Branch (Merge)
+### 📌 Apa Itu Merge?
+Setelah kita memahami apa itu branch, berikutnya adalah merge. Setelah kamu selesai mengerjakan sebuah fitur atau perbaikan bug di branch terpisah, kamu pasti ingin menggabungkan hasil pekerjaan itu ke branch utama (`main/master`).
