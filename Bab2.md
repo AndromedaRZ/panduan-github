@@ -127,7 +127,9 @@ git switch fitur-login
 ```
 Setelah ini, semua perubahan dan commit kita akan masuk ke branch `fitur-login`, dan tidak akan mengganggu progress di branch utama (`main/master`)  
 Kamu juga bisa langsung membuat branch dan berpindah ke branch yang kamu buat sekaligus dengan perintah:
-`git switch -c fitur-login`
+```
+git switch -c fitur-login
+```
 
 ### 🔄 Kembali ke Branch Utama
 Kalau mau kembali bekerja di branch utama `main`, jalankan:
