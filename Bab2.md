@@ -78,13 +78,15 @@ Branch (Cabang) adalah salah satu fitur di Git yang berfungsi untuk membuat jalu
 Branch memungkinkan kita untuk:
 1. Mencoba fitur baru tanpa merusak atau merubah kode utama
 2. Memperbaiki bug secara terpisah
-3. Mengembangkan beberapa ide atau fitur sekaligus  
+3. Mengembangkan beberapa ide atau fitur sekaligus
+
 Setelah selesai, hasil pekerjaan di branch lain bisa digabungkan (merge) kembali ke branch utama (main/master)
 
 ### 💡 Analogi Branch
 Bayangkan proyek kita seperti sebuah pohon besar yang batangnya memiliki beberapa cabang dahan
 - Batang utama = branch `main/master` tempat kode stabil berada
-- Cabang-cabang lain = branch baru untuk mengembangkan fitur tertentu secara terpisah  
+- Cabang-cabang lain = branch baru untuk mengembangkan fitur tertentu secara terpisah
+
 Jika nanti cabang yang lain sudah selesai dikerjakan, kita bisa menggabungkan fiturnya kembali ke cabang utama `main/master`
 
 ### 🛠️ Membuat dan Berpindah ke Branch Baru
