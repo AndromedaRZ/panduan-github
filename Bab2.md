@@ -155,4 +155,27 @@ Pada branch `master` terdapat simbol `*` di depannya yang berarti kita sedang be
 
 ## 🌳 2.6 Menggabungkan Branch (Merge)
 ### 📌 Apa Itu Merge?
-Setelah kita memahami apa itu branch, berikutnya adalah merge. Setelah kamu selesai mengerjakan sebuah fitur atau perbaikan bug di branch terpisah, kamu pasti ingin menggabungkan hasil pekerjaan itu ke branch utama (`main/master`).
+Setelah kita memahami apa itu branch, berikutnya adalah merge. Setelah kamu selesai mengerjakan sebuah fitur atau perbaikan bug di branch terpisah, kamu pasti ingin menggabungkan hasil pekerjaan itu ke branch utama (`main/master`).  
+Itulah fungsi `merge` di Git
+- `git merge` akan menggabungkan riwayat commit dari satu branch ke branch tempat dan commit tempat kita berada sekarang.
+- Hal ini bertujuan untuk memastikan semua perubahan dari branch lain masuk ke branch aktif, sehingga perkembangan proyek tetap terintegrasi.
+
+### 💡 Analogi Merge
+Bayangkan ketika kita sedang membangun rumah:
+- branch `main/master` = rancangan utama rumah
+- branch `fitur-taman` = remcana menambahkan taman kecil di samping rumah
+Saat taman sudah selesai dibuat di blueprint terpisah (`branch`), kita ingin menggabungkannya ke rancangan utama.
+Proses pembangunan itu adalah `merge`.
+
+### 🛠️ Cara Menggunakan `git merge`
+#### 1️⃣ Pindah ke branch yang ingin menerima hasil merge
+Biasanya kita menggunakan branch utama yaitu `main/master`.
+```
+git switch master
+```
+#### 2️⃣ Jalankan perintah merge
+Misalnya kamu ingin menggabungkan branch `fitur-taman` ke `master`.
+```
+git merge fitur-taman
+```
+Git akan mengambil semua commit di branch `fitur-taman` yang belum ada di `master`, lalu menyatukannya dengan branch `master`
