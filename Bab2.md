@@ -163,7 +163,7 @@ Itulah fungsi `merge` di Git
 ### 💡 Analogi Merge
 Bayangkan ketika kita sedang membangun rumah:
 - branch `main/master` = rancangan utama rumah
-- branch `fitur-taman` = remcana menambahkan taman kecil di samping rumah
+- branch `fitur-taman` = rencana menambahkan taman kecil di samping rumah
 Saat taman sudah selesai dibuat di blueprint terpisah (`branch`), kita ingin menggabungkannya ke rancangan utama.
 Proses pembangunan itu adalah `merge`.
 
