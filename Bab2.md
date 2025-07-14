@@ -111,10 +111,11 @@ git branch fitur-login
 *Ini hanya membuat branch, tapi kita belum berpindah ke branch tersebut
 
 #### 📃 Note
-Perlu diketahui, ketika kita membuat branch lain maka branch tersebut akan membuat jalur baru dari branch yang kita tempati.  
-Misalnya ketika kita berada di branch `master` lalu membuat branch baru bernama `fitur-login`, maka branch `fitur-login` akan membuat jalur baru yang berasal dari branch `master`.  
-Lalu ketika kita berada di branch `fitur-login` dan membuat branch baru bernama `bug-v1`, maka branch `bug-v1` akan membuat jalur baru yang berasal dari branch `fitur-login` dan bukan berasal dari branch `master`.  
-Jadi branch baru akan membuat jalur baru yang berasal dari branch posisi tempat branch kita berada.
+Perlu diketahui, ketika kita membuat branch baru maka branch tersebut akan membuat jalur baru dari branch dan commit yang kita tempati.  
+Misalnya ketika kita berada di branch `master` dan berada di commit ke-3, lalu kita membuat branch baru bernama `fitur-login`, maka branch `fitur-login` akan membuat jalur baru yang berasal dari branch `master` commit ke-3. Nantinya ke-2 branch tersebut akan menampilkan hasil pengerjaan atau commit yang sama, tetapi akan menjadi berbeda ketika salah satu branch melakukan commit.
+Setelah itu kita melakukan commit pada branch `fitur-login` sehingga itu menjadi commit ke-4nya. Progress yang ada di branch `master` tidak akan terganggu dan hasilnya akan tetap menampilkan commit ke-3.
+  
+Lalu ketika kita sedang berada di branch `fitur-login` dan membuat branch baru bernama `bug-v1`, maka branch `bug-v1` akan membuat jalur baru yang berasal dari branch `fitur-login` dan bukan berasal dari branch `master`. Karena branch `fitur-login` sudah membuat jalur terpisah dari branch `master`, maka branch `bug-v1` adalah hasil percabangan dari commit ke-4 pada branch `fitur-login`.
 
 #### 🚀 Berpindah ke branch
 Cara berpindah branch, cukup ketikkan `git switch` beserta nama branch yang ingin kita tuju:
