@@ -202,3 +202,20 @@ Misalnya kamu ingin menggabungkan branch `fitur-taman` ke `master`.
 git merge fitur-taman
 ```
 Git akan mengambil semua commit di branch `fitur-taman` yang belum ada di `master`, lalu menyatukannya dengan branch `master`
+
+### ✅ Hasil Merge
+- Jika tidak ada file yang diubah di kedua branch pada bagian yang sama, Git akan langsung berhasil merge otomatis.
+- Kalau ada file yang diubah di kedua branch pada bagian yang sama, Git akan mendeteksi konflik. Dan kalian harus menyelesaikan konflik itu secara manual.
+
+### ⚠️ Apa Itu Konflik Merge?
+Konflik saat merge atau penggabungan branch terjadi apabila Git menemukan perubahan yang bertabrakan antara branch yang satu dengan yang lainnya.
+Contoh:  
+- Di branch `main/master`, baris ke-5 file index.html ditulis "Halo Dunia".
+- Di branch `fitur-taman`, baris ke-5 file yang sama juga ditulis "Hello World".
+Git tidak tahu mana yang harus diambil, jadi dia meminta kalian untuk menyelesaikan konflik tersebut secara manual.
+
+### 🔍 Tips Setelah Merge
+- Gunakan git log --oneline --graph --all untuk melihat bagaimana branch-branch sudah digabung.
+- Gunakan git status untuk memastikan tidak ada konflik tersisa.
+
+Dengan `git merge`, kalian bisa menggabungkan hasil pekerjaan dari branch terpisah ke branch utama. Fitur ini sangat berguna ketika kalian sedang mengerjakan sebuah proyek bersama teman-teman kalian, kalian dapat menjaga alur pengembangan proyek kalian tetap rapi dan terstruktur dan menjaga kerja sama saat kalian sedang mengembangkan proyek kalian.
