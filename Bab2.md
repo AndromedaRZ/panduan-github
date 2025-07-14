@@ -89,8 +89,7 @@ Bayangkan proyek kita seperti sebuah pohon besar yang batangnya memiliki beberap
 
 Jika nanti cabang yang lain sudah selesai dikerjakan, kita bisa menggabungkan fiturnya kembali ke cabang utama `main/master`
 
-### 🛠️ Membuat dan Berpindah ke Branch Baru
-#### 🔧 Membuat branch baru
+### 🔧 Membuat branch baru
 
 Pertama-tama kita perlu mengetahui aturan untuk memberi nama pada branch terlebih dahulu:
 1. Jangan gunakan spasi jika lebih dari 1 kata, gunakan `-` sebagai alternatif.
@@ -110,14 +109,7 @@ git branch fitur-login
 ```
 *Ini hanya membuat branch, tapi kita belum berpindah ke branch tersebut
 
-#### 📃 Note
-Perlu diketahui, ketika kita membuat branch baru maka branch tersebut akan membuat jalur baru dari branch dan commit yang kita tempati.  
-Misalnya ketika kita berada di branch `master` dan berada di commit ke-3, lalu kita membuat branch baru bernama `fitur-login`, maka branch `fitur-login` akan membuat jalur baru yang berasal dari branch `master` commit ke-3. Nantinya ke-2 branch tersebut akan menampilkan hasil pengerjaan atau commit yang sama, tetapi akan menjadi berbeda ketika salah satu branch melakukan commit.
-Setelah itu kita melakukan commit pada branch `fitur-login` sehingga itu menjadi commit ke-4nya. Progress yang ada di branch `master` tidak akan terganggu dan hasilnya akan tetap menampilkan commit ke-3.
-  
-Lalu ketika kita sedang berada di branch `fitur-login` dan membuat branch baru bernama `bug-v1`, maka branch `bug-v1` akan membuat jalur baru yang berasal dari branch `fitur-login` dan bukan berasal dari branch `master`. Karena branch `fitur-login` sudah membuat jalur terpisah dari branch `master`, maka branch `bug-v1` adalah hasil percabangan dari commit ke-4 pada branch `fitur-login`.
-
-#### 🚀 Berpindah ke branch
+### 🚀 Berpindah ke branch
 Cara berpindah branch, cukup ketikkan `git switch` beserta nama branch yang ingin kita tuju:
 ```
 git swtich <nama branch>
@@ -147,12 +139,42 @@ Untuk melihat semua branch yang ada, gunakan perintah:
 ```
 git branch
 ```
-Hasilnya. misalnya:  
+Hasilnya, misalnya:  
 ```
 <Nanti masukkin gambar 'git_branch.png'>
 ```
 Pada gambar diatas, ada 3 cabang yang muncul yaitu `bug-v1`, `fitur-login`, dan `master`.  
 Pada branch `master` terdapat simbol `*` di depannya yang berarti kita sedang berada di branch tersebut, hal yang sama berlaku pada branch lainnya ketika kita pindah branch
+
+### 📃 Note
+Perlu diketahui, ketika kita membuat branch baru maka branch tersebut akan membuat jalur baru dari branch dan commit yang kita tempati.  
+Misalnya ketika kita berada di branch `master` dan berada di commit ke-3, lalu kita membuat branch baru bernama `fitur-login`, maka branch `fitur-login` akan membuat jalur baru yang berasal dari branch `master` commit ke-3. Nantinya ke-2 branch tersebut akan menampilkan hasil pengerjaan atau commit yang sama, tetapi akan menjadi berbeda ketika salah satu branch melakukan commit.
+Setelah itu kita melakukan commit pada branch `fitur-login` sehingga itu menjadi commit ke-4nya. Progress yang ada di branch `master` tidak akan terganggu dan hasilnya akan tetap menampilkan commit ke-3.
+  
+Lalu ketika kita sedang berada di branch `fitur-login` dan membuat branch baru bernama `bug-v1`, maka branch `bug-v1` akan membuat jalur baru yang berasal dari branch `fitur-login` dan bukan berasal dari branch `master`. Karena branch `fitur-login` sudah membuat jalur terpisah dari branch `master`, maka branch `bug-v1` adalah hasil percabangan dari commit ke-4 pada branch `fitur-login`.
+  
+Pada awalnya akan terasa sulit jika kalian mencoba memahami fungsi branch ini untuk pertama kalinya, tetapi nantinya kalian akan terbiasa ketika sering menggunakan fungsi branch ini. Karena branch ini akan sangat membantu ketika kita sedang mengerjakan proyek secara berkelompok ataupun berkolaborasi dengan tim lain.
+
+Karena fungsi yang menunjukkan percabangan, di bawah ini adalah contoh bagaimana cara melihat alur perkembangan commit setiap branch yang terjadi, dengan cara mengetik perintah:
+```
+git log --all --graph
+```
+Hasilnya akan seperti ini:
+```
+Masukkin gambar "git_log_all_graph.png"
+```
+  
+Cara keluar dari git lognya adalah cara menekan tombol 'q'.
+  
+Jika kelihatannya terlalu panjang dan membingungkan, kalian bisa mempermudahnya dengan menambahkan perintah `--oneline` seperti ini:
+```
+git log --all --graph --oneline
+```
+Hasilnya:
+```
+Masukkin gambar "git_log_all_graph_oneline.png"
+```
+Dari kedua gambar tersebut, nantinya akan terlihat perkembangan setiap commit dari setiap branch yang berbeda, dan dengan perintah tersebut juga akan memunculkan sebuah garis yang menjelaskan grafik perkembangannya yang bercabang-cabang.
 
 ## 🌳 2.6 Menggabungkan Branch (Merge)
 ### 📌 Apa Itu Merge?
