@@ -219,3 +219,26 @@ Git tidak tahu mana yang harus diambil, jadi dia meminta kalian untuk menyelesai
 - Gunakan git status untuk memastikan tidak ada konflik tersisa.
 
 Dengan `git merge`, kalian bisa menggabungkan hasil pekerjaan dari branch terpisah ke branch utama. Fitur ini sangat berguna ketika kalian sedang mengerjakan sebuah proyek bersama teman-teman kalian, kalian dapat menjaga alur pengembangan proyek kalian tetap rapi dan terstruktur dan menjaga kerja sama saat kalian sedang mengembangkan proyek kalian.
+
+## 2.7 🗑️ Menghapus Branch Setelah Merge
+### 📌 Kenapa branch dihapus?
+Setelah kalian selesai menggabungkan branch fitur (misalnya `git merge`) ke branch utama (`main/master`), branch fitur itu biasanya sudah tidak diperlukan lagi.  
+Menghapus branch yang sudah selesai kalian kerjakan bisa berguna untuk:
+1. Menjaga repositori tetap bersih dan rapi
+2. Menghindari kebingungan (misalnya tidak sengaja kerja di branch lama)
+
+### 🧹 Cara Menghapus Branch di Git
+Misalnya kalian sudah sudah merge branch `fitur-login` ke branch `master`, dan ingin menghapus branch `fitur-login`:
+```
+git branch -d fitur-login
+```
+perintah `-d` artinya:
+- Delete (menghapus) branch hanya jika branch sudah digabung (merged) ke branch lain
+- Jika branch tersebut belum melakukan merge, Git akan menolak menghapusnya, supaya progress di branch tersebut tidak hilang
+
+Jika kalian sudah yakin ingin menghapus branch yang belum di-merge (misalnya branch eksperimen yang gagal), maka gunakan:
+```
+git branch -D fitur-login
+```
+Perintah dari `-D` adalah `--delete --force` atau hapus paksa.  
+Hal ini juga perlu diperhatikan karena akan langsung menghapus branch tanpa mengecek apakah sudah di-merge atau belum.
