@@ -242,3 +242,5 @@ git branch -D fitur-login
 ```
 Perintah dari `-D` adalah `--delete --force` atau hapus paksa.  
 Hal ini juga perlu diperhatikan karena akan langsung menghapus branch tanpa mengecek apakah sudah di-merge atau belum.
+
+Pada bab ini, kalian telah mempelajari bagaimana Git bekerja, dimulai dari membuat repositori proyek kalian, menyimpan perubahan, hingga menggunakan branch untuk keperluan bersama. Pada bab selanjutnya, kita akan belajar menghubungkan Git lokal ke Github, agar kalian dapat menyimpan proyek kalian secara online, berkolaborasi dengan teman kalian, dan mengelola proyek kalian dimana saja. Jika kalian sudah tidak sabar lagi, langsung saja klik link berikut untuk menuju ke bab berikutnya 
