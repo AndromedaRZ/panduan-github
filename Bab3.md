@@ -64,5 +64,5 @@ git push -u origin master
 ```
 Perintah di atas akan membantu kalian jika di masa depan nanti kalian ingin melakukan push atau menyamakan perubahan di repositori Github agar sama dengan repositori lokal kalian, kalian hanya perlu menggunakan perintah `git push`. Arti dari perintah di atas yaitu mendorong perubahan dari repositori lokal ke repositori Github kalian pada remote origin dengan branch master.
 
-Jika sudah selesai melakukan push, kalian bisa periksa kembali ke repositori Github yang tadi kalian buat. Jika berhasil, maka kalian bisa melihat semua file dan commit yang kalian lakukan sebelumnya di lokal kini sudah muncul di Github kalian.
+Jika sudah selesai melakukan push, kalian bisa periksa kembali repositori Github yang tadi kalian buat. Jika berhasil, maka kalian bisa melihat semua file dan commit yang kalian lakukan sebelumnya di lokal kini sudah muncul di Github kalian.
 
