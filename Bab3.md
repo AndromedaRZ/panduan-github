@@ -25,3 +25,24 @@ Nanti masukin gambar github_repo3
 ```
 - Jika sudah tidak ada yang diatur lagi, Klik tombol “Create repository”
 
+## 🌐 3.2 Menyambungkan Git Lokal ke GitHub
+Setelah membuat repositori di github, Github akan memberikan kalian tampilan awal seperti berikut:
+```
+Nanti masukin gambar github_repo4
+```
+Langkah selanjutnya yang akan kalian lakukan adalah menyambungkannya dengan repositori Git Lokal yang pernah kalian buat sebelumnya pada komputer kalian.
+
+### 🔍 Kondisi Awal  
+Yang sudah kalian punya yaitu:
+1. Repositori Git lokal yang berada di dalam folder atau direktori proyek kalian, serta sudah melakukan git init dan melakukan commit
+2. Repositori Github kosong yang baru selesai kalian buat dan belum berisi apapun
+
+Sekarang kita akan menghubungkan dua repositori tersebut, agar nanti setiap perubahan yang kalian lakukan dari komputer lokal bisa dikirim (push) ke Github.
+
+### 🔗 Langkah-langkah Menyambungkan
+1. Salin URL Repositori Github
+Setelah membuat repositori github, salin alamat URL-nya seperti contoh berikut:
+```
+https://github.com/AndromedaRZ/belajar-git.git
+```
+Nama user nya akan secara otomatis menggunakan nama kalian
