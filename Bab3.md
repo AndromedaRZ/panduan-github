@@ -53,7 +53,16 @@ Buka folder atau direktori proyek kalian menggunakan terminal, lalu ketik perint
 git remote add origin https://github.com/AndromedaRZ/belajar-git.git
 ```
 Penjelasan perintah di atas:
-- git remote add: perintah untuk menambahkan alamat repositori jarak jauh
-- origin: nama alias standar untuk repositori github
+- git remote add: perintah untuk menambahkan remote jarak jauh dari lokal agar terhubung ke Github kalian
+- origin: nama alias default untuk repositori github
 - URL: alamat repositori github kalian
+
+#### 3. Push ke Github
+Setelah repositori sudah terhubung, kalian bisa kirim perubahan (commit) dari repositori lokal kalian ke Github
+```
+git push -u origin master
+```
+Perintah di atas akan membantu kalian jika di masa depan nanti kalian ingin melakukan push atau menyamakan perubahan di repositori Github agar sama dengan repositori lokal kalian, kalian hanya perlu menggunakan perintah `git push`. Arti dari perintah di atas yaitu mendorong perubahan dari repositori lokal ke repositori Github kalian pada remote origin dengan branch master.
+
+Jika sudah selesai melakukan push, kalian bisa melakukan refresh pada tampilan Github kalian yang sebelumnya masih kosong, jika berhasil maka kalian bisa melihat semua file dan commit yang kalian lakukan sebelumnya di lokal kini sudah muncul di Github kalian.
 
