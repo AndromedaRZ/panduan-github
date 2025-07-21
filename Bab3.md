@@ -40,9 +40,20 @@ Yang sudah kalian punya yaitu:
 Sekarang kita akan menghubungkan dua repositori tersebut, agar nanti setiap perubahan yang kalian lakukan dari komputer lokal bisa dikirim (push) ke Github.
 
 ### 🔗 Langkah-langkah Menyambungkan
-1. Salin URL Repositori Github
+#### 1. Salin URL Repositori Github
 Setelah membuat repositori github, salin alamat URL-nya seperti contoh berikut:
 ```
 https://github.com/AndromedaRZ/belajar-git.git
 ```
 Nama user nya akan secara otomatis menggunakan nama kalian
+
+#### 2. Tambahkan remote Github ke repositori lokal
+Buka folder atau direktori proyek kalian menggunakan terminal, lalu ketik perintah berikut:
+```
+git remote add origin https://github.com/AndromedaRZ/belajar-git.git
+```
+Penjelasan perintah di atas:
+- git remote add: perintah untuk menambahkan alamat repositori jarak jauh
+- origin: nama alias standar untuk repositori github
+- URL: alamat repositori github kalian
+
