@@ -67,13 +67,17 @@ Nanti masukin gambar git_remote_-v
 ```
 
 #### 3. Push ke Github
-Setelah repositori sudah terhubung, kalian bisa kirim perubahan (commit) dari repositori lokal kalian ke Github:
+Setelah repositori sudah terhubung, kalian bisa kirim perubahan (commit) dari repositori lokal kalian ke Github dengan perintah berikut:
 ```
 git push -u origin master
 ```
-Perintah di atas akan membantu kalian jika di masa depan nanti kalian ingin melakukan push atau menyamakan perubahan di repositori Github agar sama dengan repositori lokal kalian, kalian hanya perlu menggunakan perintah `git push`. Arti dari perintah di atas yaitu mendorong perubahan dari repositori lokal ke repositori Github kalian pada remote origin dengan branch master.
+Perintah di atas berguna untuk menyamakan perubahan yang ada di Repositori Github agar sama dengan Git Lokal kalian pada remote origin dengan branch master.
 
-Jika sudah selesai melakukan push, kalian bisa periksa kembali repositori Github yang tadi kalian buat. Jika berhasil, maka kalian bisa melihat semua file dan commit yang kalian lakukan sebelumnya di lokal kini sudah muncul di Github kalian.
+Setelah menyambungkannya dengan remote origin branch master, pada perubahan yang ada di Git Lokal berikutnya kalian hanya perlu mengetik perintah berikut:
+```
+git push
+```
+Maka otomatis Repositori yang ada di Github akan berubah.
 
 ## 📦 3.3 Menghubungkan GitHub ke Git Lokal
 Untuk mengubungkan repositori Github ke Git Lokal, kalian bisa menggunakan perintah `git clone`.  
