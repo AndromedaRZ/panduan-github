@@ -54,8 +54,17 @@ git remote add origin https://github.com/AndromedaRZ/belajar-git.git
 ```
 Penjelasan perintah di atas:
 - git remote add: perintah untuk menambahkan remote jarak jauh dari lokal agar terhubung ke Github kalian
-- origin: nama alias default untuk repositori github
+- origin: nama alias default untuk repositori github (kalian juga bisa menggunakan nama yang kalian inginkan)
 - URL: alamat repositori github kalian
+
+Untuk memastikan apakah remote nya sudah terhubung atau belum, kalian bisa menggunakan perintah berikut:
+```
+git remote -v
+```
+Jika sudah terhubung, maka akan muncul keterangan seperti berikut:
+```
+Nanti masukin gambar git_remote_-v
+```
 
 #### 3. Push ke Github
 Setelah repositori sudah terhubung, kalian bisa kirim perubahan (commit) dari repositori lokal kalian ke Github
