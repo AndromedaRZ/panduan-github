@@ -159,3 +159,49 @@ Kalian cukup mengetikkan perintah berikut:
 git pull
 ```
 Maka otomatis Repositori yang ada di Git Lokal akan berubah.
+
+## 📡 3.4 Mengenal git fetch
+### 🔍 Apa itu git fetch?
+Git fetch adalah perintah Git yang digunakan untuk mengambil perubahan terbaru dari repositori GitHub (remote), tapi tidak langsung menggabungkannya ke repositori lokal kalian. Perintah ini hanya mengambil data dan memperbarui referensi remote di lokal.
+
+#### ➡️ Dengan kata lain:
+Git fetch hanya "melihat dan mengambil" apa saja yang baru di GitHub, tanpa menyentuh atau mengganggu pekerjaan yang sedang kalian lakukan di git lokal.
+
+#### 📦 Ibaratnya seperti ini:
+Kalian mengecek kotak masuk email untuk melihat apakah ada surat baru, tapi belum membukanya atau membalasnya.
+
+### 🧪 Studi kasus atau penyebab kalian bisa menggunakan `git fetch`
+
+Ada juga kasus di mana commit yang ada di Github berubah namun kalian tidak mengetahuinya sehingga menyebabkan kode yang ada di Github berbeda dengan yang ada di Git Lokal kalian, jika kalian melakukan push `git push` maka akan muncul kode error seperti ini:
+```
+Masukkan gambar git_error_push.png
+```
+Maka pada masalah tersebut bisa kalian selesaikan menggunakan `git fetch`.
+
+### 🛠️ Cara Menggunakan git fetch
+Gunakan perintah:
+```
+git fetch origin
+```
+Perintah ini akan:
+- Mengambil semua update terbaru dari GitHub
+- Tidak mengubah file yang sedang kalian kerjakan
+- Memperbarui progress pekerjaan seperti dari origin/main, origin/branch-lain
+  
+Atau bisa juga kalian cukup mengetik seperti ini:
+```
+git fetch
+```
+Nantinya Git akan membuat perkembangan yang ada di proyek tersebut menjadi bercabang, bisa kalian cek dengan mengetikkan perintah berikut:
+```
+git log --oneline --all --graph
+```
+Lalu nantinya akan muncul tampilan grafis seperti ini:
+```
+Masukkan gambar git_log_oneline_all_graph_fetch.png
+```
+Pada gambar di atas, terlihat bahwa posisi commit `HEAD` berada di branch `Master` yang kalian gunakan di komputer kalian mengarah ke arah yang berbeda dengan `origin/master` dan `origin/HEAD` sehingga menyebabkan percabangan.  
+Hal ini disebabkan karena adanya tabrakan commit yang berbeda dari Github dan Git Lokal kalian, biasanya karena ada tim lain yang mengerjakan proyek kalian juga ataupun ada seseorang yang merubah commit yang ada di Githubnya langsung.
+  
+Konflik tersebut bisa kalian selesaikan dengan cara `git pull` lalu sesuaikan pekerjaan siapa yang ingin dipakai ataupun yang tidak digunakan.
+Setelah selesai, kalian bisa melakukan `commit` dan melakukan `git push` agar pekerjaan kalian bisa tersimpan di Github dan orang lain bisa melanjutkan pekerjaan yang sudah kalian selesaikan.
